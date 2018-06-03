@@ -20,7 +20,7 @@ not do well in datasets which require multi-dimensional scaling. In this paper, 
 a multi-dimensional scaling method,namedDScale, which rescales based on the computed 
 distance. It over-comes the key weakness of ReScale and requires one less parameter 
 while maintaining the simplicity of the implementation. Our empirical evaluation shows 
-thatDScale has better clustering performance than ReScalefor three existing density-based 
+that DScale has better clustering performance than ReScalefor three existing density-based 
 algorithms, i.e., DBSCAN, OPTICS andDP, on synthetic and real-world datasets.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
