@@ -10,15 +10,18 @@ This software is under GNU General Public License version 3.0 (GPLv3)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Abstract of the paper
 
-Density-based clustering is able to find clusters of arbitrary sizes and shapes while effectively separating noise. 
-Despite its advantage over other types of clustering, it is well-known that most density-based algorithms face the 
-same challenge of finding clusters with varied densities.Recently, ReScale, a principled density-ratio preprocessing 
-technique, enables a density-based clustering algorithm to identify clusters with varied densities. However, because 
-the technique is based on one-dimensional scaling, it does not do well in datasets which require multi-dimensional scaling. 
-In this paper, we propose a multi-dimensional scaling method,namedDScale, which rescales based on the computed distance. 
-It over-comes the key weakness of ReScale and requires one less parameter while maintaining the simplicity of the 
-implementation. Our empirical evaluation shows thatDScalehas better clustering performance than ReScalefor three
-existing density-based algorithms, i.e., DBSCAN, OPTICS andDP, on synthetic and real-world datasets.
+Density-based clustering is able to find clusters of arbitrary sizes and shapes while 
+effectively separating noise. Despite its advantage over other types of clustering, it 
+is well-known that most density-based algorithms face the same challenge of finding 
+clusters with varied densities. Recently, ReScale, a principled density-ratio preprocessing 
+technique, enables a density-based clustering algorithm to identify clusters with varied 
+densities. However, because the technique is based on one-dimensional scaling, it does 
+not do well in datasets which require multi-dimensional scaling. In this paper, we propose 
+a multi-dimensional scaling method,namedDScale, which rescales based on the computed 
+distance. It over-comes the key weakness of ReScale and requires one less parameter 
+while maintaining the simplicity of the implementation. Our empirical evaluation shows 
+thatDScale has better clustering performance than ReScalefor three existing density-based 
+algorithms, i.e., DBSCAN, OPTICS andDP, on synthetic and real-world datasets.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
