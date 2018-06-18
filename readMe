@@ -1,7 +1,7 @@
 These functions implement a distance scaling method based on density-ratio for discovering 
-clusters with varying densities, proposed by Ye Zhu, Kai Ming Ting, and Maia Angelova,
-"A Distance Scaling Method to Improve Density-based Clustering", published on PAKDD 2018 
-http://prada-research.net/pakdd18/pdf/86.pdf
+clusters with varying densities, proposed by Ye Zhu, Kai Ming Ting, and Maia Angelova: 
+"A Distance Scaling Method to Improve Density-based Clustering" published on PAKDD 2018 
+https://doi.org/10.1007/978-3-319-93040-4_31
 
 Written by Ye Zhu, Deakin University, Feb 2018, version 1.0
 
@@ -10,31 +10,38 @@ This software is under GNU General Public License version 3.0 (GPLv3)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Abstract of the paper
 
-Density-based clustering is able to find clusters of arbitrary sizes and shapes while 
-effectively separating noise. Despite its advantage over other types of clustering, it 
-is well-known that most density-based algorithms face the same challenge of finding 
-clusters with varied densities. Recently, ReScale, a principled density-ratio preprocessing 
-technique, enables a density-based clustering algorithm to identify clusters with varied 
-densities. However, because the technique is based on one-dimensional scaling, it does 
-not do well in datasets which require multi-dimensional scaling. In this paper, we propose 
-a multi-dimensional scaling method,namedDScale, which rescales based on the computed 
-distance. It over-comes the key weakness of ReScale and requires one less parameter 
-while maintaining the simplicity of the implementation. Our empirical evaluation shows 
-that DScale has better clustering performance than ReScalefor three existing density-based 
-algorithms, i.e., DBSCAN, OPTICS andDP, on synthetic and real-world datasets.
+Density-based clustering is able to find clusters of arbitrary sizes and shapes while effectively separating noise. Despite its 
+advantage over other types of clustering, it is well-known that most density-based algorithms face the same challenge of finding 
+clusters with varied densities. Recently, ReScale, a principled density-ratio preprocessing technique, enables a density-based 
+clustering algorithm to identify clusters with varied densities. However, because the technique is based on one-dimensional 
+scaling, it does not do well in datasets which require multi-dimensional scaling. In this paper, we propose a multi-dimensional 
+scaling method, named DScale, which rescales based on the computed distance. It overcomes the key weakness of ReScale and 
+requires one less parameter while maintaining the simplicity of the implementation. Our empirical evaluation shows that DScale 
+has better clustering performance than ReScale for three existing density-based algorithms, i.e., DBSCAN, OPTICS and DP, on 
+synthetic and real-world datasets.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 
 This code was used for the following publication (Bibtex format):
 
-@InProceedings{zhu2018DScale,
-  title={A Distance Scaling Method to Improve Density-based Clustering},
-  author={Zhu, Ye and Ting, Kai Ming and Angelova, Maia},
-  booktitle={Advances in Knowledge Discovery and Data Mining},
-  pages={1-12},
-  year={2018},
-  publisher={Springer International Publishing}
+@InProceedings{DScale2018Zhu,
+author="Zhu, Ye
+and Ting, Kai Ming
+and Angelova, Maia",
+editor="Phung, Dinh
+and Tseng, Vincent S.
+and Webb, Geoffrey I.
+and Ho, Bao
+and Ganji, Mohadeseh
+and Rashidi, Lida",
+title="A Distance Scaling Method to Improve Density-Based Clustering",
+booktitle="Advances in Knowledge Discovery and Data Mining",
+year="2018",
+publisher="Springer International Publishing",
+address="Cham",
+pages="389--400",
+isbn="978-3-319-93040-4"
 }
 
 
