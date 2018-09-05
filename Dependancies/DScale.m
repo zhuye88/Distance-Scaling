@@ -1,19 +1,12 @@
-function [ Ndis ] = DScale( dis,eta,dim )
-
-dis=dis./max(max(dis)); 
-Ndis=dis-dis;
-parfor i=1:size(dis,1)
-    Cp=dis(i,:);
-    den=sum(Cp<=eta);   % get the density value    
-    Rate=(den/size(dis,1)/(eta^dim))^(1/dim);
-    Neta=eta*Rate;
-    Lb=(Cp<=eta);
-    Rb=(Cp>eta);
-    Cp(Lb)=Cp(Lb)*Rate;
-    Cp(Rb)=(Cp(Rb)-eta).*(1-Neta)./(1-eta)+Neta;     
-    Ndis(i,:)=Cp;
+function [ Ndis ] = DScale( dis, eta, dim )
+n = size(dis, 1);
+Ndis = dis./max(max(dis));
+Lb = Ndis <= eta;
+Rb = Ndis > eta;
+den = sum(Lb, 2);
+Rate = (den./n).^(1/dim)./eta;
+rep = repmat(Rate, [1, n]);
+Ndis(Lb) = Ndis(Lb) .* rep(Lb);
+rep = rep .* eta;
+Ndis(Rb) = (Ndis(Rb) - eta).* (1 - rep(Rb))./(1-eta) + rep(Rb);
 end
-  
-
-end
-
